@@ -1,0 +1,63 @@
+def main():
+  print('Lytton High Lunches\n')
+  print('Select your mode')
+  print('Left overs')
+  print('Information')
+  mode = input('Input here  >  ')
+  if mode == ('Information'):
+    print('Ingredients')
+    print('..More options coming soon..')
+    infoMode = input('Select your mode  >  ')
+    if infoMode == ('Ingredients'):
+      print('Ham Sandwhiches')
+      print(' 2 slices of bread')
+      print(' 1 slice of ham')
+      print(' 2 herbs (?)')
+      print(' 10 grams of mayo')
+      print(' 20 grams of gratted cheese\n')
+      print('Nachos')
+      print(' 100 grams of mice')
+      print(' 50 grams of sour cream')
+      print(' 20 grams of gratted cheese')
+      print(' 50 grams of nacho chips\n')
+      print('Application will exit.')
+      import time
+      time.sleep(5)
+      print('')
+      main()
+    else:
+      print('Invalid response.')
+      print('Application will exit.')
+      import time
+      time.sleep(5)
+      print('')
+      mode()
+  else:
+   print('Invalid input.')
+   print('Application will exit.')
+   import time
+   time.sleep(5)
+   print('')
+   mode()
+  if mode == ('Left overs'):
+    la = input('What is your LA?  >  ')
+    print('You have selected {}'.format (la))
+    food = input('What food do you want to know about?  >  ')
+    
+  hamRolls = 30
+  nachos = 30
+  burgers = 30
+  hotDogs = 30
+  sandwhich = 30
+  
+  leftOverRolls = int(input('How many Ham Rolls were left?  >  '))
+  leftOverNachos = int(input('How many Nachos were left?  >  '))
+  leftOverBurgers =int(input('How many Burgers were left?  >  '))
+  hamRollsTotal = hamRolls - leftOverRolls
+  hamNachosTotal = nachos - leftOverNachos
+  hamBurgersTotal = burgers - leftOverBurgers
+  
+  print('')
+  print('There were {} rolls, {} nachos and {} burgers eaten'.format (hamRollsTotal, hamNachosTotal, hamBurgersTotal))
+  print('Thank you.')
+main()
